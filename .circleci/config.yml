@@ -15,6 +15,7 @@ jobs:
       - image: 'circleci/node'
     steps:
       - checkout
+      - run: npm i
       - run:
           name: 'node test'
           command: npm run test
