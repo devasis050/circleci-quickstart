@@ -6,7 +6,7 @@ jobs:
       - image: 'circleci/node'
     steps:
       - checkout
-      - run: npm iNVALID COMMAND
+      - run: npm i
       - run:
           name: 'node build'
           command: npm run build
