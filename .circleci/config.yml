@@ -21,9 +21,11 @@ jobs:
           command: npm run test
 workflows:
   build_and_test:
-    branch: master
     jobs:
       - build
       - test:
           requires:
-            - build          
+            - build
+          filters:
+            branches:
+              only: master
